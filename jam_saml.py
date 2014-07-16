@@ -30,10 +30,7 @@ def generate_assertion(jam_root_url, issuer, user_id, client_id):
     return SAML_ASSERTION_TEMPLATE.format(**context)
 
 
-def sign_assertion(xml_string, private_key=None):
-    if not private_key:
-        private_key = settings.JAM_SAML_PRIVATE_KEY
-
+def sign_assertion(xml_string, private_key):
     root = etree.fromstring(xml_string)
 
     signature_node = xmlsec.tree.find_node(root, xmlsec.Node.SIGNATURE)
