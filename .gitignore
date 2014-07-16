@@ -1,0 +1,4 @@
+*.pem
+*.cer
+*.pyc
+.ropeproject
