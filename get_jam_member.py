@@ -4,6 +4,15 @@ import os
 from pprint import pprint
 from sap_jam import JamSession
 
+"""
+Sample console invocation:
+
+JAM_URL=https://<jam-server>.successfactors.com \
+    JAM_OAUTH_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \
+    JAM_OAUTH_CLIENT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \
+    python get_jam_member.py admin@example.com
+"""
+
 
 # Uncomment to see HTTP request traces on the console
 # import httplib
