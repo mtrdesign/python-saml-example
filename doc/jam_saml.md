@@ -30,11 +30,11 @@ We'll do this in the "Jam Admin" area. We need two pieces: an OAuth application 
 
 The OAuth Application is pretty straightforward. Register your domain and application URLs and *don't* set up an X509 certificate.
 
-![OAuth registration](https://raw.githubusercontent.com/hdeshev/python-saml-example/master/doc/img/jam-oauth-client.png)
+![OAuth registration](https://raw.githubusercontent.com/mtrdesign/python-saml-example/master/doc/img/jam-oauth-client.png)
 
 Then we register a SAML Identity Provider (IdP). Note the IDP ID, Allowed Assertion Scope and X509 certificate fields:
 
-![SAML IdP configuration](https://raw.githubusercontent.com/hdeshev/python-saml-example/master/doc/img/jam-saml-idp.png)
+![SAML IdP configuration](https://raw.githubusercontent.com/mtrdesign/python-saml-example/master/doc/img/jam-saml-idp.png)
 
 ## SAML assertions
 
@@ -165,7 +165,7 @@ def request_token(self, assertion):
 
 Note the `saml2-bearer` grant type above and the `client_id` and `client_secret` values. Again, you'll get the last two from your registered OAuth application settings in the Jam admin:
 
-[Jam OAuth client settings](https://raw.githubusercontent.com/hdeshev/python-saml-example/master/doc/img/jam-oauth-client-settings.png)
+[Jam OAuth client settings](https://raw.githubusercontent.com/mtrdesign/python-saml-example/master/doc/img/jam-oauth-client-settings.png)
 
 ## Token Authentication
 
